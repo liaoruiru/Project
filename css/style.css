@@ -1,0 +1,290 @@
+body{
+	background-color: rgba(239, 226, 205, .4);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	margin: 0;
+}
+.pic{
+	width: 60px;
+	height: 60px;
+}
+.picture{
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	border-radius: 50%;
+	width: 600px;
+	height: 600px;
+}
+.resume{
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	width: 800px;
+	color: black;
+	font-weight: 600;
+}
+.p1{
+	text-indent : 2em;
+	font-size: 1.2rem;
+}
+.word{
+	position: absolute;
+	top: 70%;
+	left: 45%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgba(255, 194, 194, .8);
+	color: black;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align:center;
+	line-height:200px;
+}
+.word:hover{
+	background-color: rgba(255, 137, 137, .8);
+	box-shadow: 5px 5px 5px 2px rgba(255, 75, 75, .8);
+	transition: all .5s ease;
+}
+.word1{
+	position: absolute;
+	top: 70%;
+	left: 62%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgba(160, 242, 169, .8);
+	color: black;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align:center;
+	line-height:200px;
+}
+.word1:hover{
+	background-color: rgba(110, 255, 127, .8);
+	transition: all .5s ease;
+	box-shadow: 5px 5px 5px 2px rgba(31, 255, 55, .8);
+}
+.word2{
+	position: absolute;
+	top: 70%;
+	left: 78%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgba(194, 230, 255, .8);
+	color: black;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align:center;
+	line-height:200px;
+}
+.word2:hover{
+	background-color: rgba(134, 205, 255, .8);
+	transition: all .5s ease;
+	box-shadow: 5px 5px 5px 2px rgba(40, 165, 255, 0.8);
+}
+.footer{
+	background-color: rgba(206, 206, 206, .6);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	text-align:center;
+	line-height:30px;
+	font-weight: bold;
+	font-size: .8rem;
+}
+/*-----------1699px---------------------*/
+@media screen and (max-width:  1700px) {
+	.pic{
+		width: 60px;
+		height: 60px;
+	}
+	.picture{
+		position: absolute;
+		top: 25%;
+		left: 5%;
+		border-radius: 50%;
+		width: 550px;
+		height: 550px;
+	}
+	.resume{
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		width: 600px;
+	}
+	.p1{
+		text-indent : 2em;
+		font-size: 1.2rem;
+	}
+	.word{
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		width: 180px;
+		height: 180px;
+		font-size: 1.8rem;
+		text-align:center;
+		line-height:180px;
+	}
+	.word1{
+		position: absolute;
+		top: 70%;
+		left: 65%;
+		width: 180px;
+		height: 180px;
+		font-size: 1.8rem;
+		text-align:center;
+		line-height:180px;
+	}
+	.word2{
+		position: absolute;
+		top: 70%;
+		left: 80%;
+		width: 180px;
+		height: 180px;
+		font-size: 1.8rem;
+		text-align:center;
+		line-height:180px;
+	}
+	.footer{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 30px;
+		text-align:center;
+		line-height:30px;
+		font-size: .8rem;
+	}
+}
+/*-----------1340px---------------------*/
+@media screen and (max-width:  1341px) {
+	.pic{
+		width: 60px;
+		height: 60px;
+	}
+	.picture{
+		position: absolute;
+		top: 25%;
+		left: 5%;
+		border-radius: 50%;
+		width: 450px;
+		height: 450px;
+	}
+	.resume{
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		width: 500px;
+	}
+	.p1{
+		text-indent : 2em;
+		font-size: 1.2rem;
+	}
+	.word{
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		width: 150px;
+		height: 150px;
+		font-size: 1.5rem;
+		text-align:center;
+		line-height:150px;
+	}
+	.word1{
+		position: absolute;
+		top: 70%;
+		left: 65%;
+		width: 150px;
+		height: 150px;
+		font-size: 1.5rem;
+		text-align:center;
+		line-height:150px;
+	}
+	.word2{
+		position: absolute;
+		top: 70%;
+		left: 80%;
+		width: 150px;
+		height: 150px;
+		font-size: 1.5rem;
+		text-align:center;
+		line-height:150px;
+	}
+	.footer{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 30px;
+		text-align:center;
+		line-height:30px;
+		font-size: .8rem;
+	}
+}
+/*-----------992px---------------------*/
+@media screen and (max-width:  993px){
+	.pic{
+	width: 0;
+	height: 0;
+	}
+	.picture{
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	width: 200px;
+	height: 200px;
+	}
+	.resume{
+		width: 100%;
+		left: 0.5px;
+		top: 70px;
+		z-index: -10;
+	}
+	.p1{
+		text-indent : 2em;
+		font-size: 1.1rem;
+	}
+	.word{
+		width: 120px;
+		height: 120px;
+		left: 5%;
+		top: 50%;
+		font-size: 1.5rem;
+		line-height:120px;
+	}
+	.word1{
+		width: 120px;
+		height: 120px;
+		left: 37%;
+		top: 50%;
+		font-size: 1.5rem;
+		line-height:120px;
+	}
+	.word2{
+		width: 120px;
+		height: 120px;
+		left: 69%;
+		top: 50%;
+		font-size: 1.5rem;
+		line-height:120px;
+	}
+	.footer{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 30px;
+		text-align:center;
+		line-height:30px;
+		font-size: .8rem;
+	}
+}

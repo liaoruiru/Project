@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>HoloEN-Council</title>
+    <style>
+      .banner{
+        height: 250px;
+      }
+      .bg-cover{
+        background-position: center;
+        background-size: cover;
+      }
+      .mylist{
+        list-style: none;
+      }
+      .img{
+        height: 320px;
+      }
+    </style>
+  </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">
+      <img src="images/Hololive_ENGLISH_logo.png" width="130" height="52" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline mr-auto">
+
+      </form>
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="bs-20211222-index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bs-20211215-holoEN-about.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Member
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="bs-20211222-holoEN-Myth.html">HoloMyth</a>
+            <a class="dropdown-item" href="bs-20211222-holoEN-Hope.html">Project: HOPE</a>
+            <a class="dropdown-item" href="bs-20211222-holoEN-Council.html">HoloCouncil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item active" href="bs-20211222-hololive.html">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Others</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="banner bg-cover" style="background-image: url(images/holo-en-bar-1.jpg);"></div>
+    <div class="container my-3">
+      <h3 class="text-danger font-weight-bold">HoloCouncil<small class="text-muted font-weight-bold">議會</small></h3>
+      <div class="row" id="mydata">
+        <div class="col-md-4 mt-3 ">
+          <div class="card ">
+            <img src="img/Gura.jpg" class="card-md-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">所屬</h5>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
+              <div>
+                <a href="#" class="btn btn-primary">查看</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="footer bg-dark text-white text-center py-2 font-weight-bold">Power By Me 202112</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+      <script>
+        $(function(){
+          $.ajax({
+            type:"GET",
+            url:"bs-20211222-holoEN-gen2.php",
+            dataType:"json",
+            success:showdata,
+            error:function() {
+              alert("error-bs-20211222-holoEN-gen2.php");
+            }
+          });
+        });
+        function showdata(data){
+          console.log(data);
+          $("#mydata").empty();
+      for(var i=0; i < 20; i++){
+         var strHTML = '<div class="col-md-4 mt-3 "><div class="card h-100 "><img src="image/'+data[i].img+'"'+' class="card-md-top" alt="..."><div class="card-body"><p class="card-text">身高:'+data[i].height+'</p><p class="card-text">生日:'+data[i].birthday+'</p><p class="card-text">繪師:'+data[i].design+'</p><p class="card-text">頻道:<a href="'+data[i].youtube+'"target="_blank">'+data[i].title+'</a></p><div><a href="'+data[i].herf+'" class="btn btn-primary" target="_blank">查看</a></div></div></div></div>';
+        
+        $("#mydata").append(strHTML);
+      }
+      }
+   
+
+      </script>
+      
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
