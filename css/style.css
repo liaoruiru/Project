@@ -529,9 +529,9 @@ body{
 	.picture{
 	position: absolute;
 	top: 70%;
-	left: 25%;
-	width: 200px;
-	height: 200px;
+	left: 30%;
+	width: 150px;
+	height: 150px;
 	}
 	.resume{
 		width: 100%;
@@ -541,7 +541,7 @@ body{
 	}
 	.p1{
 		text-indent : 2em;
-		font-size: 1rem;
+		font-size: .8rem;
 	}
 	.word{
 		width: 100px;
