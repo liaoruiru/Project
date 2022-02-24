@@ -587,9 +587,9 @@ body{
 	.picture{
 	position: absolute;
 	top: 70%;
-	left: 23%;
-	width: 200px;
-	height: 200px;
+	left: 30%;
+	width: 150px;
+	height: 150px;
 	}
 	.resume{
 		width: 100%;
@@ -599,13 +599,13 @@ body{
 	}
 	.p1{
 		text-indent : 2em;
-		font-size: 1rem;
+		font-size: .8rem;
 	}
 	.word{
 		width: 100px;
 		height: 100px;
 		left: 5%;
-		top: 55%;
+		top: 50%;
 		font-size: 1.1rem;
 		line-height:100px;
 	}
@@ -613,7 +613,7 @@ body{
 		width: 100px;
 		height: 100px;
 		left: 35%;
-		top: 55%;
+		top: 50%;
 		font-size: 1.1rem;
 		line-height:100px;
 	}
@@ -621,7 +621,7 @@ body{
 		width: 100px;
 		height: 100px;
 		left: 65%;
-		top: 55%;
+		top: 50%;
 		font-size: 1.1rem;
 		line-height:100px;
 	}
@@ -644,10 +644,10 @@ body{
 	}
 	.picture{
 	position: absolute;
-	top: 70%;
-	left: 23%;
-	width: 200px;
-	height: 200px;
+	top: 75%;
+	left: 30%;
+	width: 120px;
+	height: 120px;
 	}
 	.resume{
 		width: 100%;
@@ -663,7 +663,7 @@ body{
 		width: 80px;
 		height: 80px;
 		left: 5%;
-		top: 55%;
+		top: 60%;
 		font-size: 1rem;
 		line-height:80px;
 	}
@@ -671,7 +671,7 @@ body{
 		width: 80px;
 		height: 80px;
 		left: 35%;
-		top: 55%;
+		top: 60%;
 		font-size: 1rem;
 		line-height:80px;
 	}
@@ -679,7 +679,7 @@ body{
 		width: 80px;
 		height: 80px;
 		left: 65%;
-		top: 55%;
+		top: 60%;
 		font-size: 1rem;
 		line-height:80px;
 	}
@@ -688,10 +688,10 @@ body{
 		top: 100%;
 		left: 0;
 		width: 100%;
-		height: 30px;
+		height: 20px;
 		text-align:center;
-		line-height:30px;
-		font-size: .8rem;
+		line-height:20px;
+		font-size: .6rem;
 	}
 }
 /*-----------280px---------------------*/
@@ -715,7 +715,7 @@ body{
 	}
 	.p1{
 		text-indent : 2em;
-		font-size: .8rem;
+		font-size: .6rem;
 	}
 	.word{
 		width: 80px;
