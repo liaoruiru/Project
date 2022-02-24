@@ -106,7 +106,7 @@
           console.log(data);
           $("#mydata").empty();
       for(var i=0; i < 20; i++){
-         var strHTML = '<div class="col-md-4 mt-3 "><div class="card h-100 "><img src="image/'+data[i].img+'"'+' class="card-md-top" alt="..."><div class="card-body"><p class="card-text">身高:'+data[i].height+'</p><p class="card-text">生日:'+data[i].birthday+'</p><p class="card-text">繪師:'+data[i].design+'</p><p class="card-text">頻道:<a href="'+data[i].youtube+'"target="_blank">'+data[i].title+'</a></p><div><a href="'+data[i].herf+'" class="btn btn-primary" target="_blank">查看</a></div></div></div></div>';
+         var strHTML = '<div class="col-md-4 mt-3 "><div class="card h-100 "><img src="images/'+data[i].img+'"'+' class="card-md-top" alt="..."><div class="card-body"><p class="card-text">身高:'+data[i].height+'</p><p class="card-text">生日:'+data[i].birthday+'</p><p class="card-text">繪師:'+data[i].design+'</p><p class="card-text">頻道:<a href="'+data[i].youtube+'"target="_blank">'+data[i].title+'</a></p><div><a href="'+data[i].herf+'" class="btn btn-primary" target="_blank">查看</a></div></div></div></div>';
         
         $("#mydata").append(strHTML);
       }
