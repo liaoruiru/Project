@@ -22,6 +22,28 @@
 	    	.img{
 	    		height: 320px;
 	    	}
+	    	.pic1{
+	    		height: 320px;
+	    		position: relative; 
+	    		left: 50px; 
+	    		background-size: cover;
+	    	}
+	    	.pic2{
+	    		height: 400px;
+	    		position: relative; 
+	    		left: -50px; 
+	    		background-size: cover;
+	    	}
+        .word{
+        	width: 350px; 
+        	font-size: 1.5em; 
+        	font-weight: 600; 
+        	background-color: rgba(175, 132, 255, .4); 
+        	position: relative; 
+        	top: 120px; 
+        	left: 5%; 
+        	border-radius: 15px;
+	      }
 	    	.timeline-section{
 	        position: relative;
 	      }
@@ -62,13 +84,21 @@
 	        .timeline-section::before, .timeline-section-pointer::before{
 	          display: none;
 	        }
-	        .pic{
-	        	width: 400px;
+	        .pic1{
+	        	background-position: center center;
+	        	width: 320px;
+	        	left: 5%;
 	        }
-	        .text{
-	        	width:100px;
-	        	font-size: .8rem;
-	        	font-weight: normal;
+	        .pic2{
+	        	background-position: center center;
+	        	width: 320px; 
+	        	left: -10%;
+
+	        }
+	        .word{
+	        	width:160px;
+	        	font-size: 1rem;
+	        	font-weight: bolder;
 	        }
 	      }
     	</style>
@@ -94,7 +124,7 @@
 		        <a class="nav-link active" href="portfolio.html">作品集</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">其他</a>
+		        <a class="nav-link" href="https://liaoruiru.github.io/planet/index.html">其他</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -106,8 +136,8 @@
 				<div class="col-md-6 d-flex justify-content-center align-items-center">
 					<h3 class="text-danger font-weight-bold">Hololive English</h3>
 				</div>
-				<div class="col-md-6 bg-cover img wow animate__fadeIn pic" data-wow-duration="3s"  style="background-image: url(images/holo-en-2-2.jpg); height: 300px; position: relative; left: 50px;">
-					<div class="text text-dark"style=" width: 350px; font-size: 1.5em; font-weight: 600; background-color: rgba(175, 132, 255, .4); position: relative; top: 120px; left: 5%; border-radius: 15px;">
+				<div class="col-md-6 wow animate__fadeIn pic1" data-wow-duration="3s"  style="background-image: url(images/holo-en-2-2.jpg);">
+					<div class="text text-dark word">
 						<p>介紹Hololive English的所有成員</p>
 	          <a href="bs-20211222-index.html" class="btn btn-outline-dark mb-2 ml-2 font-weight-bold" target="_blank">前往連結</a>
 					</div>
@@ -117,8 +147,8 @@
 				<div class="col-md-6 d-flex justify-content-center align-items-center">
 					<h3 class="text-danger font-weight-bold">一頁式網頁</h3>
 				</div>
-				<div class="col-md-6 bg-cover img wow animate__fadeIn pic" data-wow-duration="3s" data-wow-delay="1s" style="background-image: url(images/ina-5-1.jpg); height: 400px; position: relative; left: -50px;">
-					<div class="text text-dark"style=" width: 350px; font-size: 1.5em; font-weight: 600; background-color: rgba(175, 132, 255, .4); position: relative; top: 120px; left: 10%; border-radius: 15px;">
+				<div class="col-md-6 wow animate__fadeIn pic2" data-wow-duration="3s" data-wow-delay="1s" style="background-image: url(images/ina-5-1.jpg);">
+					<div class="text text-dark word">
 	          <p>以HololiveEN一期生<br>Ninomae Ina’nis/一伊那尓栖<br>為主題做的一頁式網頁</p>
 	          <a href="bs-20211229-spa.html" class="btn btn-outline-dark mb-2 ml-2 font-weight-bold" target="_blank">前往連結</a>
         	</div>
