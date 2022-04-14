@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/animate.min.css">
     <title>Hololive</title>
     <style>
     	.banner{
@@ -32,7 +32,7 @@
         width: 5px;
         top: 0;
         bottom: 0;
-        background-color: rgba(225, 196, 102, .8);
+        background-color: #87B5FA;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -54,7 +54,7 @@
       .timeline-section-pointer:hover::before{
         width: 25px;
         height: 25px;
-        background-color: #FFCC00;
+        background-color: #A4C8F0;
         border-radius: 50%;
         border: 5px solid #6C6BF2;
         transition: .5s;
@@ -73,7 +73,7 @@
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	  <a class="navbar-brand" href="bs-20211222-index.html">
-	  	<img src="images/Hololive_ENGLISH_logo.png" width="130" height="52" alt="">
+	  	<img src="images/Hololive_ENGLISH_logo.png" id="start" width="130" height="52" alt="">
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -87,10 +87,10 @@
 	      <li class="nav-item">
 	        <a class="nav-link" href="bs-20211222-index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
-	      <li class="nav-item active">
+	      <li class="nav-item">
 	        <a class="nav-link" href="bs-20211215-holoEN-about.html">About <span class="sr-only">(current)</span></a>
 	      </li>
-	      <li class="nav-item dropdown">
+	      <li class="nav-item dropdown active">
 	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
 	          Member
 	        </a>
@@ -116,7 +116,7 @@
 					<h3 class="text-danger font-weight-bold">Hololive<small class="text-muted">零期生</small></h3>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/hologen0.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInRight" data-wow-duration="3s" style="background-image: url(images/hologen0.jpg);"></div>
 			</div>
 		</div>
 		<div class="row flex-row-reverse timeline-section-pointer">
@@ -124,7 +124,7 @@
 				<h3 class="text-danger font-weight-bold">Hololive<small class="text-muted">一期生</small></h3>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/hologen1.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/hologen1.jpg);"></div>
 			</div>
 		</div>
 		<div class="row timeline-section-pointer">
@@ -132,7 +132,7 @@
 					<h3 class="text-danger font-weight-bold">Hololive<small class="text-muted">二期生</small></h3>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/hologen2.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/hologen2.jpg);"></div>
 			</div>
 		</div>
 		<div class="row flex-row-reverse timeline-section-pointer">
@@ -140,7 +140,7 @@
 				<h3 class="text-danger font-weight-bold">Hololive<small class="text-muted">Gamers</small></h3>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holoGamer.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/holoGamer.jpg);"></div>
 			</div>
 		</div>
 		<div class="row timeline-section-pointer">
@@ -148,7 +148,7 @@
 					<h3 class="text-danger font-weight-bold">Hololive<small class="text-muted">三期生</small></h3>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/hologen3.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/hologen3.jpg);"></div>
 			</div>
 		</div>
 		<div class="row flex-row-reverse timeline-section-pointer">
@@ -156,7 +156,7 @@
 				<h3 class="text-danger font-weight-bold">Hololive<small class="text-muted">四期生</small></h3>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/hologen4.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/hologen4.jpg);"></div>
 			</div>
 		</div>
 		<div class="row timeline-section-pointer">
@@ -164,7 +164,7 @@
 					<h3 class="text-danger font-weight-bold">Hololive<small class="text-muted">五期生</small></h3>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/hologen5.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/hologen5.jpg);"></div>
 			</div>
 		</div>
 		<div class="row flex-row-reverse timeline-section-pointer">
@@ -172,7 +172,7 @@
 				<h3 class="text-danger font-weight-bold">Hololive<small class="text-muted">六期生</small></h3>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/hologen6.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/hologen6.jpg);"></div>
 			</div>
 		</div>
 		<div class="row timeline-section-pointer">
@@ -180,7 +180,7 @@
 					<h3 class="text-danger font-weight-bold">Hololive-Indonesia<small class="text-muted">一期生</small></h3>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holoID1.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/holoID1.jpg);"></div>
 			</div>
 		</div>
 		<div class="row flex-row-reverse timeline-section-pointer">
@@ -188,7 +188,7 @@
 				<h3 class="text-danger font-weight-bold">Hololive-Indonesia<small class="text-muted">二期生</small></h3>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holoID2.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/holoID2.jpg);"></div>
 			</div>
 		</div>
 		<div class="row timeline-section-pointer">
@@ -196,7 +196,7 @@
 					<h3 class="text-danger font-weight-bold">Hololive-Indonesia<small class="text-muted">三期生</small></h3>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holoID3.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/holoID3.jpg);"></div>
 			</div>
 		</div>
 		<div class="row flex-row-reverse timeline-section-pointer">
@@ -204,7 +204,7 @@
 					<h3 class="text-danger font-weight-bold">HoloStars<small class="text-muted">一期生</small></h3>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holostar1.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/holostar1.jpg);"></div>
 			</div>
 		</div>
 		<div class="row timeline-section-pointer">
@@ -212,7 +212,7 @@
 				<h3 class="text-danger font-weight-bold">HoloStars<small class="text-muted">二期生(SunTempo)</small></h3>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holostar2.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/holostar2.jpg);"></div>
 			</div>
 		</div>
 		<div class="row flex-row-reverse timeline-section-pointer">
@@ -220,7 +220,7 @@
 					<h3 class="text-danger font-weight-bold">HoloStars<small class="text-muted">三期生(TriNero)</small></h3>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holostar3.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/holostar3.jpg);"></div>
 			</div>
 		</div>
 		<div class="row timeline-section-pointer">
@@ -228,17 +228,29 @@
 				<h3 class="text-danger font-weight-bold">HoloStars<small class="text-muted">四期生『UPROAR!!』</small></h3>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holostar4.jpg);"></div>
+				<div class="img bg-cover img-fluid wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="350" style="background-image: url(images/holostar4.jpg);"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 d-flex justify-content-center align-items-center start mt-3">
+				<button type="button" class="btn btn-primary wow animate__pulse" data-wow-duration="1s" data-wow-iteration="1000" style="border-radius: 50%;">
+					<a href="#start" style="text-decoration:none;"><h3 class="text-light pt-2">回到上面</h3></a>
+				</button>
 			</div>
 		</div>
 	</div>
 </div>
+
 	<div class="footer bg-dark text-white text-center py-2 font-weight-bold">Power By Me 202112</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
