@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/animate.min.css">
     <title>HoloEN-About</title>
     <style>
     	.banner{
@@ -32,7 +32,7 @@
         width: 5px;
         top: 0;
         bottom: 0;
-        background-color: rgba(225, 196, 102, .8);
+        background-color: #87B5FA;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -54,7 +54,7 @@
       .timeline-section-pointer:hover::before{
         width: 25px;
         height: 25px;
-        background-color: #FFCC00;
+        background-color: #A4C8F0;
         border-radius: 50%;
         border: 5px solid #6C6BF2;
         transition: .5s;
@@ -63,6 +63,9 @@
         .timeline-section::before, .timeline-section-pointer::before{
           display: none;
         }
+        .img{
+    		height: 200px;
+    		}
       }
 
     </style>
@@ -110,47 +113,48 @@
 		<div class="timeline-section">
 			<div class="row timeline-section-pointer">
 				<div class="col-md-6 d-flex justify-content-center align-items-center">
-					<h3 class="text-danger font-weight-bold">HoloMyth<small class="text-muted">神話</small></h3>
-					<p>於2020年9月9日成立</p>
-					<ul class="mylist">
-						<li>Mori Calliope／森カリオペ</li>
-						<li>Takanashi Kiara／小鳥遊キアラ</li>
-						<li>Ninomae Ina'nis／一伊那尓栖</li>
-						<li>Gawr Gura／がうる・ぐら</li>
-						<li>Watson Amelia／ワトソン・アメリア</li>
+					<h3 class="text-danger font-weight-bold mr-3 wow animate__zoomIn" data-wow-duration="3s">HoloMyth<small class="text-muted">神話</small></h3>
+					<p class="wow animate__zoomIn" data-wow-duration="3s">於2020年9月9日成立</p>
+					<ul class="mylist wow animate__fadeIn" data-wow-duration="5s">
+						<li><span class="badge badge-danger">Mori Calliope</span></li>
+						<li><span class="badge badge-warning">Takanashi Kiara</span></li>
+						<li><span class="badge badge-success">Watson Amelia</span></li>						
+						<li><span class="badge badge-info">Ninomae Ina'nis</span></li>
+						<li><span class="badge badge-primary">Gawr Gura</span></li>
 					</ul>
 				</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holo-en-2.jpeg);"></div>
+				<div class="img bg-cover img-fluid wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="250" style="background-image: url(images/holo-en-2.jpeg);"></div>
 			</div>
 		</div>
 		<div class="row flex-row-reverse timeline-section-pointer">
-			<div class="col-md-6 d-flex justify-content-center align-items-center">
-				<h3 class="text-danger font-weight-bold">Project <small class="text-muted">HOPE</small></h3>
-				<p>Project: HOPE是hololive English底下的虛擬歌手企劃於2021年7月11日出道</p>
-				<ul class="mylist">
-					<li>IRyS／アイリス</li>
+			<div class="col-md-6 d-flex justify-content-center align-items-center my-3">
+				<h4 class="text-danger font-weight-bold mr-4 wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="200">Project:<br><small class="text-muted">HOPE</small></h4>
+				<p class="wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="200">於2021年7月11日出道</p>
+				<ul class="mylist wow animate__fadeIn" data-wow-duration="5s" data-wow-offset="200">
+					<li><span class="badge badge-danger">IRyS</span></li>
 				</ul>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holo-en-4.jpeg);"></div>
+				<div class="img bg-cover img-fluid wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="200" style="background-image: url(images/holo-en-4.jpeg);"></div>
 			</div>
 		</div>
 
 		<div class="row timeline-section-pointer">
-			<div class="col-md-6 d-flex justify-content-center align-items-center">
-				<h3 class="text-danger font-weight-bold">HoloCouncil<small class="text-muted">議會</small></h3>
-				<p>於2021年8月17日出道</p>
-				<ul class="mylist">
-					<li>Tsukumo Sana／九十九佐命</li>
-					<li>Ceres Fauna／セレス・ファウナ</li>
-					<li>Ouro Kronii／オーロ・クロニー</li>
-					<li>Nanashi Mumei／七詩ムメイ</li>
-					<li>Hakos Baelz／ハコス・ベールズ</li>
+			<div class="col-md-6 d-flex justify-content-center align-items-center my-3">
+				<h4 class="text-danger font-weight-bold mr-3 wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="200">HoloCouncil<small class="text-muted">議會</small></h4>
+				<p class="wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="200">於2021年8月17日出道</p>
+				<ul class="mylist wow animate__fadeIn" data-wow-duration="5s" data-wow-offset="250">
+					<li><span class="badge badge-danger">Hakos Baelz</span></li>					
+					<li><span class="badge badge-warning text-white">Nanashi Mumei</span></li>
+					<li><span class="badge badge-success">Ceres Fauna</span></li>					
+					<li><span class="badge badge-info">Tsukumo Sana</span></li>					
+					<li><span class="badge badge-primary">Ouro Kronii</span></li>
+
 				</ul>
 			</div>
 			<div class="col-md-6">
-				<div class="img bg-cover" style="background-image: url(images/holo-en-3.jpeg);"></div>
+				<div class="img bg-cover img-fluid wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="200" style="background-image: url(images/holo-en-3.jpeg);"></div>
 			</div>
 		</div>
 
@@ -162,6 +166,10 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+     <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
