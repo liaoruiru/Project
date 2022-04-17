@@ -25,10 +25,26 @@
         background-position: center center;
         background-size: cover;
       }
+      .top{
+        height: 450px;
+      }
+      .btm{
+        height: 350px;
+      }
       .carousel-caption{
         background-color: rgba(0, 0, 0, .3);
       }
-      
+      @media screen and (max-width: 992px) {
+        .top{
+          height: 300px;
+        }
+        .mid{
+          height:0%;
+        }
+        .btm{
+          height:0%;
+        }
+      }
     </style>
     <title>Ninomae Ina’nis</title>
   </head>
@@ -169,25 +185,25 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active bg-cover" style="background-image: url(images/Ina-n.jpg); height: 450px;">
+        <div class="carousel-item active bg-cover top" style="background-image: url(images/Ina-n.jpg);">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="font-weight-bold">雖然看不太出來，但卻是貨真價實的古神的祭司。</h5>
             <p class="font-weight-bold">某日撿到了一本「奇怪的書」後獲得了操控觸手的能力。對其本人而言觸手只是日常生活的一部分。不過，少女心的她連觸手都想給它打扮打扮。
             </p>
           </div>
         </div>
-        <div class="carousel-item bg-cover" style="background-image: url(images/Ina-1.jpg); height: 450px;">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="font-weight-bold">2021年12月11日</h5>
-            <p class="font-weight-bold">YouTube平台的訂閱數達到130萬</p>
+          <div class="carousel-item bg-cover top" style="background-image: url(images/Ina-1.jpg);">          
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="font-weight-bold">2021年09月13日</h5>
+              <p class="font-weight-bold">Youtube頻道訂閱數突破120萬人，同時也是出道一週年紀念日。</p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item bg-cover" style="background-image: url(images/ina-2.jpg); height: 450px;">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="font-weight-bold">〈VIOLET〉</h5>
-            <p class="font-weight-bold">個人第一首原創歌曲。</p>
+          <div class="carousel-item bg-cover top" style="background-image: url(images/ina-2.jpg);">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="font-weight-bold">〈VIOLET〉</h5>
+              <p class="font-weight-bold">個人第一首原創歌曲。</p>
+            </div>
           </div>
-        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -225,11 +241,11 @@
   <!--************** section5 **************-->
   <section class="py-5" style="position: relative;" id="bg-two">
     <div class="row">
-      <div class="col-md-5 bg-cover" 
+      <div class="col-md-5 bg-cover mid" 
         style="position: absolute; 
-        top: 0; 
+        top: 5%; 
         bottom: 0; 
-        background-image: url(images/ina-3.jpg);">
+        background-image: url(images/ina-3-1.jpg);">
       </div>
     </div>
     <div class="container">
@@ -315,13 +331,13 @@
   <!--************** section7 **************-->
   <section class="bg-light py-5" style="position: relative;" id="bg-one"> 
     <div class="container">
-      <div class="row justify-content-start">
+      <div class="row">
         <div class="col-md-7">
           <dl class="row">
-            <dt class="col-sm-3">活動歷程</dt>
+            <dt class="col-sm-3 h5 font-weight-bold">活動歷程</dt>
             <dd class="col-sm-9">9月9日，hololive宣布hololive English一期生的出道，分別為噶嗚·古拉、森美聲、一伊那爾棲、小鳥遊琪亞拉、阿米莉亞·華生。同日推特和YouTube頻道開始公開。</dd>
 
-            <dt class="col-sm-3">個人相關</dt>
+            <dt class="col-sm-3 h5 font-weight-bold">個人相關</dt>
             <dd class="col-sm-9">
               <p>★儘管有觸手，其實是人類。</p>
               <p>★會說英語，日語，和韓語三種語言。</p>
@@ -329,23 +345,22 @@
               <p>★因集合了畫畫、觸手、克蘇魯等要素，以及爸爸為黑星紅白的緣故，在其b站官方頻道投稿的Youtube初次直播視頻中被月球DD們稱呼為北齋。</p>
             </dd>
 
-            <dt class="col-sm-3">人際關係</dt>
+            <dt class="col-sm-3 h5 font-weight-bold">人際關係</dt>
             <dd class="col-sm-9">
               <p>『UMISEA』（湊阿庫婭、寶鍾瑪琳、一伊那爾棲、噶嗚·古拉）</p>
-              <p>由與海有關聯的EN和JP組成員組成的特殊組合『UMISEA』，於2021年9月15日組成，並由公式製作了四部相關的小動畫與原創曲〈浸食!! 地球全域全おーしゃん〉。</p>
+              <p>由與海有關聯的EN和JP組成員組成的特殊組合『UMISEA』，於2021年9月15日組成，並由公式製作了四部相關的小動畫與原創曲<a href="https://www.youtube.com/watch?v=MKEb-Ox1KEw&t=62s&ab_channel=hololive%E3%83%9B%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%96-VTuberGroup" target="_blank" style="text-decoration: none; color: rgba(63, 0, 74, 0.8); font-weight: bold;">〈浸食!! 地球全域全おーしゃん〉</a>。</p>
             </dd>
           </dl>
-          </div>
         </div>
       </div>
     </div>
-    <div class="row flex-row-reverse">
-      <div class="col-md-5 bg-cover" 
-        style="position: absolute; 
-        top: 0; 
-        bottom: 0; 
-        background-image: url(images/ina-4.jpg);"></div>
-    </div>
+      <div class="row justify-content-end">
+        <div class="col-md-5 bg-cover btm" 
+          style="position: absolute; 
+          top: 15%; 
+          bottom: 0;
+          background-image: url(images/ina-4.jpg);"></div>
+      </div>
   </section>
   <br>
   <!--************** section8 **************-->
@@ -373,16 +388,16 @@
         </div>
       </div>
         <div class="col-md-3 bg-cover wow animate__backInLeft" data-wow-duration="5s" data-wow-delay="2s" style="background-image: url(images/kiara-1.png); height: 500px;">
-          <div class="text text-white"style="background-color: rgba(255, 122, 2, .3); position: relative; top: 120px; border-radius: 15px;"><small class="font-weight-bold mt-2 ml-2">Takanashi Kiara</small>
-          <h2>小鳥遊キアラ</h2>
-          <p>ファストフードチェーンの店主になりたいアイドル。不死鳥であり、ニワトリや七面鳥ではない。（重要）彼女は命を削りながらすごく頑張って働いている、どうせ死んでも灰から蘇られるから。</p>
-          <a href="https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww" class="btn btn-outline-dark mb-2 ml-2 font-weight-bold">前往連結</a>
-        </div>
+              <div class="text text-white"style="background-color: rgba(255, 122, 2, .3); position: relative; top: 120px; border-radius: 15px;"><small class="font-weight-bold mt-2 ml-2">Takanashi Kiara</small>
+              <h2>小鳥遊キアラ</h2>
+              <p>ファストフードチェーンの店主になりたいアイドル。不死鳥であり、ニワトリや七面鳥ではない。（重要）彼女は命を削りながらすごく頑張って働いている、どうせ死んでも灰から蘇られるから。</p>
+              <a href="https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww" class="btn btn-outline-dark mb-2 ml-2 font-weight-bold">前往連結</a>
+          </div>
         </div>
     </div>    
   </section>
 
-  <!--************** section10 **************-->
+  <!--************** section9 **************-->
   <section>
     <div class="container" style="position:relative; left: 250px;">
       <ul class="nav">
