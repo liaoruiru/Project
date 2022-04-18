@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>首頁</title>
   </head>
@@ -40,24 +41,24 @@
 			  </div>
 			</nav>
 		<div>
-		<img src="images/picture.jpeg" alt="" class="picture">
+		<img src="images/picture.jpeg" alt="" class="picture img-fluid wow animate__bounce" data-wow-duration="1s" data-wow-offset="150">
 	  </div>
-	  <div class="resume">
+	  <div class="resume wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="150">
 	  	<p class="p1">我叫廖瑞茹，在找工作的這段期間也不忘充實自己，有利用時間去駕訓班上課並且考取到汽車駕照，還有去職訓局上關於網頁設計的課程，並考取到電腦軟體應用乙級的證照。<br>　　在學期間，利用課餘時間打工，也有參與實習三個月，這類經驗能使我更快適應新的環境，我將以積極熱情和認真的態度來從事未來的工作。<br>
 	  	　　在空閒時，會練習電腦繪圖，用sai畫了幾組貼圖，在<a href="https://line.me/S/shop/sticker/author/139408">line貼圖小舖</a>看得到。目前總共製作了6組，仍然有在繼續創作。在畫這些貼圖前會先在手繪本簡單的畫一些Q版角色，然後再結合主題(如:中秋節)去設計角色風格。</span></p>
 	  </div>
 	  <a href="work.html">
-		  <div class="word">
+		  <div class="word wow animate__bounce" data-wow-duration="1s" data-wow-offset="150" data-wow-iteration="5">
 			  <p>工作經歷</p>
 		  </div>
 		</a>
 		<a href="portfolio.html">
-			<div class="word1">
+			<div class="word1 wow animate__bounce" data-wow-duration="1s" data-wow-offset="150" data-wow-iteration="5">
 		    <p>作品集</p>
 		  </div>
 		</a>
 	  <a href="https://liaoruiru.github.io/planet/index.html" target="_blank">
-	  	<div class="word2">
+	  	<div class="word2 wow animate__bounce" data-wow-duration="1s" data-wow-offset="150" data-wow-iteration="5">
 	    	<p>Music</p>
 	  	</div>
 		</a>
@@ -70,9 +71,12 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="js/WOW.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
